@@ -2,7 +2,7 @@ function localScope() {
     var myVariable = "I am here!";
     console.log(myVariable);
 }
-localScope();
+localScope("I am here!");
 console.log(myVariable);
 if (typeof myVariable != "undefind") {
     console.log('outside localScope', myVariable)
