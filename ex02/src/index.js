@@ -1,5 +1,5 @@
-function functionPrintInfo(parameter1, parameter2){
-    console.log(parameter1, parameter2);
+function functionPrintInfo(name, age){
+    console.log(name, age);
 }
 functionPrintInfo("John", 23);
 functionPrintInfo("Michael", 43)

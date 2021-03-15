@@ -1,7 +1,11 @@
-var myGlobalVariable = 10
-notGlobalVariable = 5
-
+var myGlobalVariable = 10;
 function function1() {
+     notGlobalVariable = 5;
+     return notGlobalVariable;
+}
+
+
+function function2() {
     var result = "";
     if (typeof myGlobalVariable != "undefined") {
         result += "myGlobalVariable: " + myGlobalVariable;
@@ -12,3 +16,9 @@ function function1() {
     console.log(result);
 }
 function1();
+function2();
+
+module.exports = {
+    function1,
+    function2
+};
